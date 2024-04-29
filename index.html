@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/proprieties.css">
+    <link rel="stylesheet" href="./assets/css/KeyFrames.css">
+    <title>Portfólio</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="hamburguer" id="Close-menu">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>Fechar</span>
+        </div>
+
+        <header>
+            <div class="img-wrapper">
+                <img src="./assets/images/backgroundimg.jpg" alt="">
+            </div>
+            <div class="banner">    
+                <h1 class="title-style">Seja bem-vindo!</h1>  
+                <p>Meu nome é Rodrigo Hipolito</p>
+                <!-- Adicionei o atributo onclick para chamar a função scrollToConhecimentos quando o botão "Saiba mais" for clicado -->
+                <button class="ButtonCustom" onclick="scrollToConhecimentos()">Saiba mais</button>
+            </div>
+            
+            <!-- Script para rolar suavemente para a seção de conhecimentos -->
+            <script>
+                function scrollToConhecimentos() {
+                    // Use o método scrollIntoView para rolar até a seção de conhecimentos
+                    document.getElementById('conhecimentos').scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+
+        </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li id="menu-1" class="menu-item"><a id="Close-menu" href="#" class="menu-link">home</a></li>
+                    <li id="menu-2" class="menu-item"><a id="Close-menu" href="#conhecimentos" class="menu-link">conhecimentos</a></li>
+                    <li id="menu-3" class="menu-item"><a id="Close-menu" href="#projetos" class="menu-link">projetos</a></li>
+                    <li id="menu-4" class="menu-item"><a id="Close-menu" href="#contato" class="menu-link">contato</a></li>
+                    <li id="menu-5" class="menu-item"><a id="Close-menu" href="#orcamento" class="menu-link">orçamento</a></li>
+                    
+                    
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a id="social-3" href="https://www.linkedin.com/in/rodrigo-hipolito1/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </aside>
+
+        <section class="sessao-conhecimentos" >
+            <div class="sessao-header"id="conhecimentos">
+                <h1 class="title-style">Conhecimentos</h1>
+            </div>
+            <div class="conhecimentos">
+                <div class="conhecimento" data-anime="left">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Habilidade para criar e estruturar páginas web utilizando tags para definir conteúdo e aparência dos elementos.</p>
+                    </div>
+                </div>
+                <div class="conhecimento" data-anime="right">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>Css</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Capacidade de estilizar páginas web utilizando seletores, propriedades e valores para controlar o design e a aparência dos elementos.</p>
+                    </div>
+                </div>
+                <div class="conhecimento" data-anime="left">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-js"></i>
+                        <h3>Javascript</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Habilidade para criar scripts para adicionar interatividade em páginas web, utilizando funções, controle de fluxo e eventos.</p>
+                    </div>
+                </div>
+                <div class="conhecimento" data-anime="right">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-react"></i>
+                        <h3>ReactJS</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Habilidade para desenvolver interfaces de usuário dinâmicas e responsivas utilizando componentes reutilizáveis, gerenciamento de estado e ciclo de vida.</p>
+                    </div>
+                </div>
+                <div class="conhecimento" data-anime="left">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-github"></i>
+                        <h3>Git e Github</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Possuo alguns projetos no repositório Github e busco novos conhecimentos para aprimorar nessas ferramentas.</p>
+                    </div>
+                </div>
+                <div class="conhecimento" data-anime="right">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Habilidade para desenvolver scripts e automações de processos repetitivos,aplicativos e analise de dados.  </p>
+                    </div>
+                </div>
+                <div class="imagemFundo">
+                    <i class="fa-solid fa-laptop-code"></i>                
+                </div>
+        </section>
+        <section class="sessao-projetos" id="projetos" >
+            <div class="projetos-header">
+                <h1>Projetos</h1>
+            </div>
+            <div class="cards">
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="./media/proj1.jpg" alt="">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>projeto1</h2>
+                            <h3>HTML, CSS</h3>
+                            <P>Projeto Cardapio Pizzaria</P>
+                            <!-- Adicione um evento de clique ao botão "Saiba mais" do projeto 1 -->
+                            <button class="ButtonSend" onclick="redirectToProjectPage('projeto1')">Saiba mais</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="./media/proj2.jpg" alt="">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>projeto2</h2>
+                            <h3>React, JS, HTML & CSS</h3>
+                            <P>Copia do Site Netflix. </P>
+                            <button class="ButtonSend" data-project-id="projeto2">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="./media/proj3.jpg" alt="">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>projeto3</h2>
+                            <h3>HTML, CSS</h3>
+                            <P>Conversor de moeda REAL x EURO E DOLAR </P>
+                            <button class="ButtonSend" data-project-id="projeto3">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="./media/proj4.jpg" alt="">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>projeto4</h2>
+                            <h3>HTML, CSS e React</h3>
+                            <P>Portfólio Responsivo, feito anterior a este. </P>
+                            <button class="ButtonSend" data-project-id="projeto4">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        
+
+        <section class="section-contact" id="contato">
+            <div class="contact-wrapper" data-anime="up">
+                <div class="contact-left"></div>
+                <div class="contact-right">
+                    <h1>contato</h1>
+                    <form class="form-contact">
+                        <div class="input-group">
+                            <input id="nome" type="text" class="field">
+                            <label  for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input id="email" type="email" class="field">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="mensage" class="field"></textarea>
+                            <label for="mensage" class="field-label">Mensagem</label>
+                        </div>
+                        <button class="ButtonCustom" type="send">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <section class="section-budget" id="orcamento">
+            <div class="box"></div>
+            <div class="budget-wrapper">
+                <div class="header-budget" data-anime="left">
+                    <h1>Faça seu orçamento</h1>
+                </div>
+                
+                <form class="form-budget">
+                    
+                    <div class="qtde-page" data-anime="right" >
+                        <label for="qtde">Quantidade de páginas:</label> 
+                        <input type="number" name="qtde" id="qtde" min="1" max="100"> <br/><br/>
+                        <label for="js">Preciso de um script JS:</label>
+                        <input class="check" checked="" type="checkbox" name="js" id="js"> <br/><br/><br/> 
+                    </div>
+                    
+                    
+                    <div class="group-layout" data-anime="up">
+                        <label>Layout</label> 
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Sim, preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-não">Não preciso de um layout</label>
+                        </div><br/>
+                        
+                        <div>
+                            <label for="prazo">Prazo</label>
+                            <input type="range" name="prazo" id="prazo" min="1" max="10">
+                        </div>
+                        
+                        <div class="btn">
+                            <button type="submit" id="envio-form-orc" class="ButtonCustom">enviar</button>
+                        </div>
+                        
+                        <label id="preco"> R$ 0,00</label>
+                        
+                    </div>
+                     
+                </form>
+        </section> 
+
+        <footer>
+            <div class="footer--area">
+                <div class="footer--item area1">
+                    <div class="footer-social">
+                        <!-- Adicione um link para o seu perfil do LinkedIn -->
+                        <a href="https://www.linkedin.com/in/rodrigo-hipolito1/" target="_blank">
+                            <img src="assets/images/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <!-- Você também pode adicionar um link para o Facebook se desejar -->
+                    </div>
+                </div>
+                <div class="footer--item area2">
+                    <p>Fiz esse pequeno Portfólio para aprendizagem continua de JavaScript desenvolvimento Web.</p>
+                </div>
+                <div class="footer--item area3">
+                    <form method="POST" id="send-email">
+                        <input id="email" type="email" name="email" placeholder="EMAIL TO SUBSCRIBE" autocomplete="email" />
+                        <button class="button" form="send-email">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        
+            
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        // Função para redirecionar para a página do projeto correspondente ao clicar no botão "Saiba mais"
+        function redirectToProjectPage(projectId) {
+            const projectUrls = {
+                "projeto1": "https://pizzaria1.netlify.app/",
+                "projeto2": "https://catalogoflix.netlify.app/",
+                "projeto3": "https://conversor-eur-usd.netlify.app/",
+                "projeto4": "https://portfoliorod.netlify.app/",
+                // Adicione os URLs dos seus projetos aqui conforme necessário
+            };
+            
+            const url = projectUrls[projectId];
+            if (url) {
+                window.open(url, "_blank"); // Abre a URL em uma nova aba
+            } else {
+                console.error("URL do projeto não encontrada:", projectId);
+            }
+        }
+    
+        // Adiciona o evento de clique a todos os botões "Saiba mais"
+        document.querySelectorAll(".ButtonSend").forEach(button => {
+            button.addEventListener("click", function() {
+                const projectId = this.getAttribute("data-project-id");
+                redirectToProjectPage(projectId);
+            });
+        });
+    </script>
+</body>
+</html>
